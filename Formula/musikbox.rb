@@ -1,6 +1,6 @@
 require 'formula'
 
-class Musikcube < Formula
+class Musikbox < Formula
     homepage 'http://musikcube.com'
     head 'git://github.com/clangen/musikcube.git'
     url 'https://github.com/clangen/musikcube/archive/0.1.1.tar.gz'
