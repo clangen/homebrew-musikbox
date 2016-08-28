@@ -1,4 +1,4 @@
-# musikcube-homebrew
+# homebrew-musikcube
 
 a homebrew formula for the musikcube project.
 
