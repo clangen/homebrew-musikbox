@@ -3,9 +3,9 @@ require 'formula'
 class Musikbox < Formula
     homepage 'http://musikcube.com'
     head 'git://github.com/clangen/musikcube.git'
-    url 'https://github.com/clangen/musikcube/archive/0.3.2.tar.gz'
-    sha256 '2122e4be426856a62ca26986787c34abf3e70991e5bc22d1701c7bb0e87d5241'
-    version '0.3.2'
+    url 'https://github.com/clangen/musikcube/archive/0.3.3.tar.gz'
+    sha256 '75cf211a6305b143a5a0039090deeacd6985526ce2817eeef7e9606db2bd5bcf'
+    version '0.3.3'
 
     depends_on 'cmake' => :build
     depends_on 'boost'
@@ -17,7 +17,7 @@ class Musikbox < Formula
     depends_on 'fftw'
 
     def install
-        system "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=#{prefix} ."
+        system "cmake -DCMAKE_BUILD_TYPE=Release -DHOMEBREW_PREFIX=#{HOMEBREW_PREFIX} -DCMAKE_INSTALL_PREFIX=#{prefix} ."
         system "make"
         system "make install"
     end
