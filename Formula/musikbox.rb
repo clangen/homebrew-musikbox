@@ -4,7 +4,7 @@ class Musikbox < Formula
     homepage 'http://musikcube.com'
     head 'git://github.com/clangen/musikcube.git'
     url 'https://github.com/clangen/musikcube/archive/0.7.3.tar.gz'
-    sha256 'bbbfc7026746e642bf582c0c8f7faa57866b488a725ac17999bf00f10e0b6769'
+    sha256 'd70e95c375a3a58af68c5c869074bb207d558680c1e06e91e805bbcd77d5bf67'
     version '0.7.3'
 
     depends_on 'cmake' => :build
