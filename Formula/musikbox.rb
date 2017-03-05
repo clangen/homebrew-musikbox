@@ -12,9 +12,7 @@ class Musikbox < Formula
     depends_on 'libogg'
     depends_on 'libvorbis'
     depends_on 'flac'
-    depends_on 'mpg123'
     depends_on 'faad2'
-    depends_on 'fftw'
 
     def install
         system "cmake -DCMAKE_BUILD_TYPE=Release -DHOMEBREW_PREFIX=#{HOMEBREW_PREFIX} -DCMAKE_INSTALL_PREFIX=#{prefix} ."
